@@ -1,0 +1,105 @@
+body {
+ background-color: #F2F2F2;   
+}
+
+.searchbar {
+    position: absolute;
+    top: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.header {
+    background-color: #595752;
+}
+
+.cocaine{
+    color: azure
+}
+
+
+/* EXPANDING SEARCH BAR STARTS HERE */
+
+/* Main Styling */
+input[type=text].searchBar 
+{
+    width: 100px;
+    padding: 4px 8px;
+    margin-top:10px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+ -webkit-transition: all ease-in-out .3s;
+ -moz-transition: all ease-in-out .3s;
+}
+
+/* Individual Styling */
+
+input[type=text]#red
+{
+   background: #8E1710;
+}
+
+
+/* Main Styling On Focus for all */
+input[type=text].searchBar:focus 
+{
+    width: 165px; 
+    outline: none;  
+    background: #fff;
+    border:1px solid #999;
+}
+
+/* Individual Styling on Focus */
+
+input[type=text]#red:focus
+{
+  color:#d9534f;
+  background:#fff;
+}
+
+
+/* EXPANDING MOUSE OVER TAB STARTS HERE */
+
+/* Main Styling */
+div.tab 
+{
+    width: 100px;
+    float:left;
+    display:inline-block;
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 12px;
+    /* border-radius: 10px; */
+    border: none;
+ -webkit-transition: all ease-in-out .3s;
+ -moz-transition: all ease-in-out .3s;
+}
+
+/* Individual Styling */
+
+div#red
+{
+   background: #d9534f;
+   border-radius: 0 10px 10px 0;
+}
+
+
+/* Main Styling On Focus for all */
+div.tab:hover 
+{
+    width: 165px; 
+    outline: none;  
+    background: #fff;
+  
+}
+
+/* Individual Styling on Focus */
+
+div#red:hover
+{
+ width:140px;
+ color:#e9e9e9;
+}
