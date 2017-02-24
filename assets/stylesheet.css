@@ -1,6 +1,16 @@
-body {
- background-color: #F2F2F2;   
+html {
+    height: 100%;
 }
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+background: #141E30; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0f2a5a , rgba(60, 72, 85, 0.58)); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #313c50 , #3c526a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                }
 
 .searchbar {
     position: absolute;
@@ -11,10 +21,11 @@ body {
 }
 
 .header {
-    background-color: #595752;
+    background-color: #8E1710;
 }
 
 .cocaine{
+    font-size: 78px;
     color: azure
 }
 
@@ -24,14 +35,15 @@ body {
 /* Main Styling */
 input[type=text].searchBar 
 {
-    width: 100px;
+    width: 120px;
+    height: 40px;
     padding: 4px 8px;
     margin-top:10px;
-    color: #fff;
-    font-size: 12px;
+    color: #bbdff5;
+    font-size: 18px;
     border-radius: 10px;
     border: none;
- -webkit-transition: all ease-in-out .3s;
+ -webkit-transition: all ease-in-out .5s;
  -moz-transition: all ease-in-out .3s;
 }
 
@@ -39,67 +51,82 @@ input[type=text].searchBar
 
 input[type=text]#red
 {
-   background: #8E1710;
+   background: #313c50;
 }
 
 
 /* Main Styling On Focus for all */
 input[type=text].searchBar:focus 
-{
-    width: 165px; 
+{    
+    font-weight: 600;
+    width: 265px; 
     outline: none;  
-    background: #fff;
-    border:1px solid #999;
+    background: #2cd0d6;
+    border:0px solid #999;
+    
+    border-color: #8E1710;
+    box-shadow: 0 0 10px rgba(142, 23, 16, 0.08);
+
 }
 
 /* Individual Styling on Focus */
 
 input[type=text]#red:focus
 {
-  color:#d9534f;
-  background:#fff;
+  color:#313c50;
+  background:#dafcf5;
 }
 
 
-/* EXPANDING MOUSE OVER TAB STARTS HERE */
-
-/* Main Styling */
-div.tab 
-{
-    width: 100px;
-    float:left;
-    display:inline-block;
-    padding: 4px 8px;
-    color: #fff;
-    font-size: 12px;
-    /* border-radius: 10px; */
-    border: none;
- -webkit-transition: all ease-in-out .3s;
- -moz-transition: all ease-in-out .3s;
+/*Footer*/
+#footer {
+color: #fdfdfd;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background: rgba(24, 27, 28, 0.88);
 }
 
-/* Individual Styling */
-
-div#red
-{
-   background: #d9534f;
-   border-radius: 0 10px 10px 0;
+a {
+    color: white;
 }
 
-
-/* Main Styling On Focus for all */
-div.tab:hover 
-{
-    width: 165px; 
-    outline: none;  
-    background: #fff;
-  
+a:active {
+    color: white;
 }
 
-/* Individual Styling on Focus */
+h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
 
-div#red:hover
-{
- width:140px;
- color:#e9e9e9;
+.panel{
+    padding: 20px;
+    color: rgba(248, 248, 248, 0.24);
+    position: relative;
+    bottom: -50px;
+    height: 780px;
+    background-color: rgba(31, 36, 38, 0.88);
+    box-shadow: 1px 1px 1px 1px;
+    -webkit-box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
+    -moz-box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
+    box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
+}
+
+.panel-text{
+    padding-left: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #daf1ff
+}
+
+.putdown {
+    position: relative;
+    bottom: -20px;
+}
+
+.wrap {
+    color: white;
+    word-wrap: break-word;
 }
