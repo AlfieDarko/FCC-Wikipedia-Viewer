@@ -105,8 +105,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     color: rgba(248, 248, 248, 0.24);
     position: relative;
+    width: 100%;
     bottom: -50px;
-    height: 780px;
+    height: 700px;
     background-color: rgba(31, 36, 38, 0.88);
     box-shadow: 1px 1px 1px 1px;
     -webkit-box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
@@ -115,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .panel-text{
+    padding-top: 40px;
     padding-left: 10px;
     font-size: 50px;
     font-weight: 400;
