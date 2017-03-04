@@ -21,7 +21,7 @@ background: linear-gradient(to left, #313c50 , #3c526a); /* W3C, IE 10+/ Edge, F
 }
 
 .header {
-    background-color: #8E1710;
+    background-color:  #001a33;
 }
 
 .cocaine{
@@ -33,7 +33,7 @@ background: linear-gradient(to left, #313c50 , #3c526a); /* W3C, IE 10+/ Edge, F
 /* EXPANDING SEARCH BAR STARTS HERE */
 
 /* Main Styling */
-input[type=text].searchBar 
+input[type=text].searchBar
 {
     width: 120px;
     height: 40px;
@@ -56,14 +56,14 @@ input[type=text]#red
 
 
 /* Main Styling On Focus for all */
-input[type=text].searchBar:focus 
-{    
+input[type=text].searchBar:focus
+{
     font-weight: 600;
-    width: 265px; 
-    outline: none;  
+    width: 265px;
+    outline: none;
     background: #2cd0d6;
     border:0px solid #999;
-    
+
     border-color: #8E1710;
     box-shadow: 0 0 10px rgba(142, 23, 16, 0.08);
 
@@ -103,16 +103,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .panel{
     padding: 20px;
-    color: rgba(248, 248, 248, 0.24);
+    /*color: rgba(248, 248, 248, 0.24);*/
     position: relative;
     width: 100%;
     bottom: -50px;
-    height: 700px;
-    background-color: rgba(31, 36, 38, 0.88);
+    height: 100px;
+    /*background-color: rgba(31, 36, 38, 0.88);
     box-shadow: 1px 1px 1px 1px;
     -webkit-box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
     -moz-box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
-    box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);
+    box-shadow: -5px 4px 97px -13px rgba(0,0,0,0.51);*/
 }
 
 .panel-text{
@@ -131,4 +131,13 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
     color: white;
     word-wrap: break-word;
+}
+
+.boxit {
+  border-radius: 5px;
+  border-width: thin;
+  font-size: 12px;
+}
+#wikiResultsContainer {
+
 }
