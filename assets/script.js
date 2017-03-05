@@ -5,12 +5,12 @@ $(document).ready(function() {
         var counter;
         searchTerm = $("#red").val();
 
-        url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" +
-            searchTerm + "&limit=10&namespace=0&format=json";
+        url = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&gsrlimit=15&generator=search&origin=*";
 
         console.log(searchTerm);
 
         $.getJSON(url, function(wiki) {
+
 
             $("#wikiResultsContainer").html("");
 
